@@ -33,22 +33,12 @@
     <div class="font-b">
       <span>投资有风险，借贷需谨慎</span><br>
       <span>请根据个人偿还能力合理借款</span><br>
-      <span>金掌柜信息咨询服务(广州)有限公司</span><br>
+      <span>上海联帝信息科技有限公司</span><br>
       <span>贷款资金由正规金融持牌放款机构提供</span><br>
       <span>放款额度及放款时间以机构审批结果为准</span><br>
       <span>正规贷款平台，利息低，放款快，额度高达20万</span><br>
       <span>沪ICP备2021010277号-1</span><br>
     </div>
-    <!--    <div class="font-b">
-          <span>投资有风险，借贷需谨慎</span><br>
-          <span>请根据个人偿还能力合理借款</span><br>
-          <span>产品年利率不超过24%</span><br>
-          <span>上海学宫信息科技有限公司</span><br>
-          <span>产品名称：月花花</span><br>
-          <span>贷款资金由招联消费金融有限公司提供</span><br>
-          <span>放款额度及放款时间以机构审批结果为准</span><br>
-          <span>沪ICP备2020026551号</span><br>
-        </div>-->
   </div>
 </template>
 <script>

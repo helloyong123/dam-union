@@ -30,25 +30,6 @@
       <input type="checkbox" v-model="checked">
     </div>
     <div class="centImg"></div>
-<!--    <div class="lowImg"></div>-->
-<!--    <div class="font-b">
-      <span>投资有风险，借贷需谨慎</span><br>
-      <span>请根据个人偿还能力合理借款</span><br>
-&lt;!&ndash;      <span>上海学宫信息科技有限公司</span><br>&ndash;&gt;
-      <span>贷款资金由正规金融持牌放款机构提供</span><br>
-      <span>放款额度及放款时间以机构审批结果为准</span><br>
-&lt;!&ndash;      <span>沪ICP备2020026551号</span><br>&ndash;&gt;
-    </div>-->
-    <!--    <div class="font-b">
-          <span>投资有风险，借贷需谨慎</span><br>
-          <span>请根据个人偿还能力合理借款</span><br>
-          <span>产品年利率不超过24%</span><br>
-          <span>上海学宫信息科技有限公司</span><br>
-          <span>产品名称：月花花</span><br>
-          <span>贷款资金由招联消费金融有限公司提供</span><br>
-          <span>放款额度及放款时间以机构审批结果为准</span><br>
-          <span>沪ICP备2020026551号</span><br>
-        </div>-->
   </div>
 </template>
 <script>

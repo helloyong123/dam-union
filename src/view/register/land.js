@@ -128,43 +128,6 @@ export default {
         apply(params).then(res => {
           this.buttonDisabled = false
           if (res.code == 200) {
-            //tuia
-            if(res.userId == 8){
-              countLog.ready(function () {
-                countLog.init(function () {
-                  // 如果需要跳转，在此处写入  window.location.href  =  跳转链接
-                }, {
-                  isCopy: 0,
-                  pageType: 0
-                })
-              })
-            }
-            //bianxianmao
-            if (res.userId == 33) {
-              _bxmPlatformFn();
-            }
-              //gdt
-              if (res.userId == 67) {
-                  gdt('track', 'RESERVATION', {'key1': 'value1', 'key2': 'value2'});
-              }
-              //xiaomi
-              if (res.userId == 72) {
-                  mi_tracker.log("form", {conversionId : "6192"})
-              }
-              //doumeng
-       /*       if (res.userId == 67) {
-                  _ai_analysis()
-              }*/
-            //chubao
-            if(res.userId == 50){
-              _CONVERGEMOB.track('35')
-            }
-            //vivo
-            if(res.userId == 27){
-              var actName = 'submit';
-              var actProp = {act: 'submit', name: '表单组件'};
-              VAD_EVENT.sendAction(actName, actProp);
-            }
             setCookie('user_mobile', this.form.mobile, 604800)
             setTimeout(() =>{
               this.$router.push({

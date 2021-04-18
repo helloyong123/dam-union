@@ -38,16 +38,6 @@
       <span>放款额度及放款时间以机构审批结果为准</span><br>
       <span>沪ICP备2021010277号-1</span><br>
     </div>
-    <!--    <div class="font-b">
-          <span>投资有风险，借贷需谨慎</span><br>
-          <span>请根据个人偿还能力合理借款</span><br>
-          <span>产品年利率不超过24%</span><br>
-          <span>上海学宫信息科技有限公司</span><br>
-          <span>产品名称：月花花</span><br>
-          <span>贷款资金由招联消费金融有限公司提供</span><br>
-          <span>放款额度及放款时间以机构审批结果为准</span><br>
-          <span>沪ICP备2020026551号</span><br>
-        </div>-->
   </div>
 </template>
 <script>
@@ -91,53 +81,6 @@
           register(this.form.mobile, this.form.smsCode, mark, this.form.back).then(res => {
             this.buttonDisabled = false
             if (res.code == 200) {
-              //tuia
-              if (res.userId == 8) {
-                countLog.ready(function () {
-                  countLog.init(function () {
-                    // 如果需要跳转，在此处写入  window.location.href  =  跳转链接
-                  }, {
-                    isCopy: 0,
-                    pageType: 0
-                  })
-                })
-              }
-              //bianxianmao
-              if (res.userId == 33) {
-                _bxmPlatformFn();
-                let back = this.$route.query.bxm_id;
-                if(back){
-                  localStorage.setItem("bxm_id", back)
-                  this.form.back = back;
-                }
-              }
-              //chubao
-              if (res.userId == 50) {
-                _CONVERGEMOB.track('35')
-                let back = this.$route.query.mob_cid;
-                if(back){
-                  localStorage.setItem("mob_cid", back)
-                  this.form.back = back;
-                }
-              }
-                //gdt
-                if (res.userId == 67) {
-                    gdt('track', 'RESERVATION', {'key1': 'value1', 'key2': 'value2'});
-                }
-                //xiaomi
-                if (res.userId == 72) {
-                    mi_tracker.log("form", {conversionId : "6192"})
-                }
-                //doumeng
-          /*      if (res.userId == 67) {
-                    _ai_analysis()
-                }*/
-              //vivo
-              if (res.userId == 27) {
-                var actName = 'submit';
-                var actProp = {act: 'submit', name: '表单组件'};
-                VAD_EVENT.sendAction(actName, actProp);
-              }
               setCookie('user_mobile', this.form.mobile, 604800)
               setTimeout(() => {
                 this.$router.push({

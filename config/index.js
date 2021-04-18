@@ -24,7 +24,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {//前端路由匹配模式
-        target: 'http://localhost:8089',  //后端请求服务域名和端口
+        target: 'http://localhost:8088',  //后端请求服务域名和端口
         changeOrigin: true,   //设置请求头
    /*     pathRewrite: {
           '^/api': ''   //路径重写 如果后端有api就不用重写

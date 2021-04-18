@@ -24,16 +24,6 @@ export default [{
     component: resolve => require(['./view/other/agreement'], resolve)
   },
   {
-    path: '/page',
-    name: 'page',
-    meta: {
-      keepAlive: true,
-      isBack:false,
-      title: '注册'
-    },
-    component: resolve => require(['./view/register/page'], resolve)
-  },
-  {
     path: '/page1',
     name: 'page1',
     meta: {
@@ -43,7 +33,6 @@ export default [{
     },
     component: resolve => require(['./view/register/page1'], resolve)
   },
-
   {
     path: '/page2',
     name: 'page2',
@@ -53,6 +42,17 @@ export default [{
       title: '注册'
     },
     component: resolve => require(['./view/register/page2'], resolve)
+  },
+
+  {
+    path: '/page3',
+    name: 'page3',
+    meta: {
+      keepAlive: true,
+      isBack:false,
+      title: '注册'
+    },
+    component: resolve => require(['./view/register/page3'], resolve)
   },
 
   {
@@ -79,14 +79,14 @@ export default [{
 
 
   {
-    path: '/page3',
-    name: 'page3',
+    path: '/page4',
+    name: 'page4',
     meta: {
       keepAlive: true,
       isBack:false,
       title: '注册'
     },
-    component: resolve => require(['./view/register/page3'], resolve)
+    component: resolve => require(['./view/register/page4'], resolve)
   },
   {
     path: '/selectCity',

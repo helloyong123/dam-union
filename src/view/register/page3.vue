@@ -61,7 +61,7 @@
     </div>
   </div>
 </template>
-<script src="./land.js"></script>
+<script src="./page.js"></script>
 <style>
   .font-b{
     margin: 0.1rem auto;

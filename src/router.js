@@ -24,35 +24,35 @@ export default [{
     component: resolve => require(['./view/other/agreement'], resolve)
   },
   {
-    path: '/land1',
-    name: 'land1',
+    path: '/page',
+    name: 'page',
     meta: {
       keepAlive: true,
       isBack:false,
       title: '注册'
     },
-    component: resolve => require(['./view/register/land1'], resolve)
+    component: resolve => require(['./view/register/page'], resolve)
   },
   {
-    path: '/land2',
-    name: 'land2',
+    path: '/page1',
+    name: 'page1',
     meta: {
       keepAlive: true,
       isBack:false,
       title: '注册'
     },
-    component: resolve => require(['./view/register/land2'], resolve)
+    component: resolve => require(['./view/register/page1'], resolve)
   },
 
   {
-    path: '/land3',
-    name: 'land3',
+    path: '/page2',
+    name: 'page2',
     meta: {
       keepAlive: true,
       isBack:false,
       title: '注册'
     },
-    component: resolve => require(['./view/register/land3'], resolve)
+    component: resolve => require(['./view/register/page2'], resolve)
   },
 
   {
@@ -79,14 +79,14 @@ export default [{
 
 
   {
-    path: '/landDet',
-    name: 'landDet',
+    path: '/page3',
+    name: 'page3',
     meta: {
       keepAlive: true,
       isBack:false,
       title: '注册'
     },
-    component: resolve => require(['./view/register/landDet'], resolve)
+    component: resolve => require(['./view/register/page3'], resolve)
   },
   {
     path: '/selectCity',

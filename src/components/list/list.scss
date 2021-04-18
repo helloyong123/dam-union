@@ -1,0 +1,119 @@
+@import '../../assets/sass/mixins';
+.loan-list{
+  padding:0 0.426667rem;
+  .loan-card{
+    float:left;
+    margin-top:0.426667rem;
+    background: #fff;
+    @include wh(100%,5.0rem);
+    @include borderRadius(10px);
+    border:1px solid #eee;
+    .loan-content{
+      padding:0.682667rem 0.64rem;
+      .loan-logo{
+        float:left;
+        @include wh(100%,1.96rem);
+        line-height: 0.96rem;
+        .left{
+          float:left;
+          display:block;
+          img{
+            float:left;
+            @include borderRadius(0.4rem);
+            @include wh(3.5rem,3.5rem);
+          }
+          .loan-name{
+            float:left;
+            width: 6rem;
+            margin-left:0.44rem;
+            margin-top:0.14rem;
+            @include sc(0.75rem,#303133);
+          }
+        }
+        .right{
+          float:right;
+          display: block;
+          //margin-left: 2.5rem;
+          .loan-num{
+            float:left;
+            @include sc(0.569333rem,#ff8b37);
+          }
+          .loan-success{
+            float:left;
+            @include sc(0.469333rem,#333);
+            img{
+              //padding-top: 0.15rem;
+              padding-right: 0.2rem;
+              @include wh(.8rem,.9rem)
+            }
+          }
+        }
+      }
+    }
+  }
+  .loan-info{
+    float:left;
+    @include wh(100%,1.536rem);
+    margin-top:0.7rem;
+    margin-left:4.00rem;
+    p{
+      position: relative;
+      float:left;
+      width:60%;
+      height:1.536rem;
+    }
+    p:nth-child(2){
+      text-align: center;
+    }
+    p:nth-child(3){
+      text-align:right;
+    }
+  }
+}
+
+
+.loan-money{
+  @include sc(0.5rem,#B6BBC4);
+  width: 10rem;
+  display: block;
+}
+
+.loan-ed{
+  position: absolute;
+  bottom:0;
+  @include sc(0.512rem,#999);
+  display: block;
+}
+
+.loan-days{
+  @include sc(0.512rem,#666);
+  display: block;
+}
+
+.loan-day-rate{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-size: 0.512rem;
+  color: #666;
+  display: block;
+  left: 50%;
+  margin-left: -50%;
+}
+
+.kong{
+  float:left;
+  @include wh(100%,2.35rem);
+}
+
+.approve-button{
+  position: relative;
+  @include wh(2.773333rem,1.152rem);
+  @include sc(0.512rem,#313131);
+  @include borderRadius(20px);
+  top:-0.064rem;
+  line-height: 1.152rem;
+  background: #fdd552;
+  border:0;
+  outline: none;
+}
